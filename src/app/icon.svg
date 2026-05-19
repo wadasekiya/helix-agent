@@ -1,0 +1,85 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <!-- refined metallic gradient -->
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffbb00"/>
+      <stop offset="35%" stop-color="#d4b46a"/>
+      <stop offset="60%" stop-color="#8a6a2f"/>
+      <stop offset="100%" stop-color="#2a1f12"/>
+    </linearGradient>
+
+    <!-- accent gradient (cool contrast) -->
+    <linearGradient id="accent" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f79b1a"/>
+      <stop offset="50%" stop-color="#00e8e4"/>
+      <stop offset="100%" stop-color="#056d03"/>
+    </linearGradient>
+
+  </defs>
+
+  <!-- background -->
+  <rect width="128" height="128" fill="#ffffff"/>
+
+  <!-- central axis -->
+  <line x1="64" y1="6" x2="64" y2="122"
+        stroke="url(#accent)" stroke-width="1.2" opacity="0.35"/>
+
+  <!-- primary helix A -->
+  <path d="
+    M64 8
+    C34 22, 34 42, 64 54
+    C94 66, 94 86, 64 100
+    C34 114, 34 124, 64 126
+  "
+  stroke="url(#gold)"
+  stroke-width="2.4"
+  fill="none"
+  stroke-linecap="round"/>
+
+  <!-- primary helix B -->
+  <path d="
+    M64 8
+    C94 22, 94 42, 64 54
+    C34 66, 34 86, 64 100
+    C94 114, 94 124, 64 126
+  "
+  stroke="url(#gold)"
+  stroke-width="2.4"
+  fill="none"
+  stroke-linecap="round"
+  opacity="0.9"/>
+
+  <!-- secondary strands -->
+  <path d="
+    M64 8
+    C45 20, 45 44, 64 56
+    C83 68, 83 92, 64 104
+    C45 116, 45 124, 64 126
+  "
+  stroke="url(#accent)"
+  stroke-width="1.2"
+  fill="none"
+  opacity="0.55"
+  stroke-linecap="round"/>
+
+  <path d="
+    M64 8
+    C83 20, 83 44, 64 56
+    C45 68, 45 92, 64 104
+    C83 116, 83 124, 64 126
+  "
+  stroke="url(#accent)"
+  stroke-width="1.2"
+  fill="none"
+  opacity="0.55"
+  stroke-linecap="round"/>
+
+  <!-- micro depth lines -->
+  <path d="M64 8 C56 26, 56 48, 64 66 C72 84, 72 104, 64 122"
+        stroke="url(#gold)" stroke-width="0.9" opacity="0.25" fill="none"/>
+
+  <path d="M64 8 C72 26, 72 48, 64 66 C56 84, 56 104, 64 122"
+        stroke="url(#gold)" stroke-width="0.9" opacity="0.25" fill="none"/>
+
+</svg>
